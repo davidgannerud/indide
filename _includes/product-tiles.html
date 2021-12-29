@@ -1,0 +1,19 @@
+<section class="tiles">
+
+	{% for product in site.documents limit:site.front-page-posts %}
+		{% if product.category == page.product-type %}
+			<article class="style{{ forloop.index | plus:1 }}">
+				<span class="image">
+					<img src="{{ site.url }}{{ site.baseurl }}{{ product.featured-image }}" alt="" />
+				</span>
+				<a href="{{ product.url | prepend:site.baseurl | prepend:site.url }}">
+					<h2>{{ product.title }}</h2>
+					<div class="content">
+						<p>{{ product.excerpt }}</p>
+					</div>
+				</a>
+			</article>
+		{% endif %}
+	{% endfor %}
+
+</section>

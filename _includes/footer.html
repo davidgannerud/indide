@@ -4,27 +4,7 @@
 <footer id="footer">
 	<div class="inner">
 		<section>
-			<h2>Get in touch</h2>
-			<form method="post" action="https://formspree.io/{{ site.email }}"
-      method="POST">
-				<div class="field half first">
-					<input type="text" name="name" id="name" placeholder="Name" />
-				</div>
-				<div class="field half">
-					<input type="email" name="_replyto" id="email" placeholder="Email" />
-				</div>
-				<div class="field">
-					<textarea name="message" id="message" placeholder="Message"></textarea>
-				</div>
-				<ul class="actions">
-					<li>
-						<input type="submit" value="Send" class="special" />
-					</li>
-				</ul>
-			</form>
-		</section>
-		<section>
-			<h2>Follow</h2>
+			<h2>Sociala medier</h2>
 			<ul class="icons">
 				{% if site.twitter_username %}
 				<li><a href="https://twitter.com/{{ site.twitter_username }}" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
@@ -34,16 +14,6 @@
 				{% endif %}
 				{% if site.instagram_username %}
 				<li><a href="https://www.instagram.com/{{ site.instagram_username }}" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-				{% endif %}
-				{% if site.dribbble_username %}
-				<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-				{% endif %}
-				{% if site.github_username %}
-				<li><a href="https://github.com/{{ site.github_username }}" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-				{% endif %}
-				{% if site.500px_username %}
-				<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-				{% endif %}
 				{% if site.phone %}
 				<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
 				{% endif %}
@@ -53,9 +23,7 @@
 			</ul>
 		</section>
 		<ul class="copyright">
-			<li>&copy; {{ site.title }}. All rights reserved</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			<li>Jekyll integration: <a href="http://andrewbanchi.ch">Andrew Banchich</a></li>
+			<li>&copy; {{ site.title }}</li>
 		</ul>
 	</div>
 </footer>

@@ -1,14 +1,14 @@
 <section class="tiles">
 
-{% for post in site.posts limit:site.front-page-posts %}
+{% for category in site.categories limit:site.front-page-posts %}
 	<article class="style{{ forloop.index | plus:1 }}">
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/pic01.jpg" alt="" />
+			<img src="{{ site.url }}{{ site.baseurl }}/images/pic02.jpg" alt="" />
 		</span>
-		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
-			<h2>{{ post.title }}</h2>
+		<a href="{{ category.url | prepend:site.baseurl | prepend:site.url }}">
+			<h2>{{ category.title }}</h2>
 			<div class="content">
-				<p>{{ post.excerpt }}</p>
+				<p>{{ category.excerpt }}</p>
 			</div>
 		</a>
 	</article>
