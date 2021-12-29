@@ -9,24 +9,26 @@
 title: Indidé
 email: maria@indide.se
 description: Unika handgjorda smycken
-baseurl: "/phantom-jekyll-theme" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Logo settings
 logo-image-url: images/logga-bw.png
-font-awesome-icon-logo:
 
 # Social settings
-#github_username: andrewbanchich
-#twitter_username: andrewbanchich
-facebook_URL: indide.se
+facebook_URL: https://www.facebook.com/indide.se
 instagram_username: indide_se
-#dribbble_username: andrewbanchich
-#500px_username: andrewbanchich
-#phone: 555-5555
 
 # Build settings
 markdown: kramdown
 
 # Layout settings
 home-link-in-menu: yes
+
+collections:
+  categories:
+    output: true
+  earings:
+    output: true
+  bracelets:
+    output: true
