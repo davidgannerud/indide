@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: product
 title:  "Örhänge 2"
 featured-image: /images/earings/halsband.jpg
 category: earings

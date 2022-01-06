@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: product
 title:  "Bling bling"
 featured-image: /images/earings/halsband.jpg
 category: earings

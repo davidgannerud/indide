@@ -48,6 +48,17 @@
 			}
 		}
 
+		&.prod {
+			display: block;
+			margin: 0 0 _size(element-margin) 0;
+			width: 100%;
+
+			img {
+				width: 100%;
+				max-width: 500px;
+			}
+		}
+
 		&.main {
 			display: block;
 			margin: 0 0 (_size(element-margin) * 1.5) 0;
