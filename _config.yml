@@ -28,6 +28,12 @@ home-link-in-menu: yes
 collections:
   categories:
     output: true
+    order:
+      - bracelets.md
+      - earings.md
+      - neckless.md
+      - rings.md
+      - other.md
   earings:
     output: true
   bracelets:

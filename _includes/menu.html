@@ -1,21 +1,17 @@
 <nav id="menu">
 	<h2>Meny</h2>
 	<ul>
-		{% for page in site.pages %}
-			{% if page.path == "index.html" %}
-			<li><a href="{{ page.url | prepend: site.baseurl | remove: " index.html" }}">{{ page.title }}</a></li>
-			{% endif %} 
-		{% endfor %}
+		<li><a href="{{ site.baseurl }}">Hem</a></li>
 
-		{% for page in site.pages %}
+		{% for page in site.categories %}
 			{% if page.title %}
-			<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title}}</a></li>
 			{% endif %} 
 		{% endfor %}
 		
-		{% for page in site.categories %}
-			{% if page.title %}
-			<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title}}</a></li>
+		{% for page in site.html_pages %}
+			{% if page.title != "Hem" %}
+				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 			{% endif %} 
 		{% endfor %}
 	</ul>
