@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Halsband
-product-type: neckless
+product-type: necklaces
 ---
 
 Halsband

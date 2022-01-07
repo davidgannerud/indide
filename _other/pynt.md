@@ -1,8 +1,8 @@
 ---
 layout: product 
-title:  "Bling bling armband"
+title:  "Nåt pynt"
 featured-image: /images/earings/halsband.jpg
-category: bracelets
+category: other
 image-path: images/earings
 ---
 Första raden

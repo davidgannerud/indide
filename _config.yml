@@ -32,10 +32,16 @@ collections:
     order:
       - bracelets.md
       - earings.md
-      - neckless.md
+      - necklaces.md
       - rings.md
       - other.md
+  bracelets:
+    output: true
   earings:
     output: true
-  bracelets:
+  necklaces:
+    output: true
+  rings:
+    output: true
+  other:
     output: true

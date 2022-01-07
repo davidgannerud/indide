@@ -1,8 +1,8 @@
 ---
 layout: product 
-title:  "Bling bling armband"
+title:  "Ett halsband"
 featured-image: /images/earings/halsband.jpg
-category: bracelets
+category: necklaces
 image-path: images/earings
 ---
 Första raden
