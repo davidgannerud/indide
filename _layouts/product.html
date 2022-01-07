@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-{% include head.html %}
+  {% include head.html %}
 
 <body>
 
     {% include header.html %}
 
-    <h1>{{ page.title }}</h1> {% if page.featured-image %}
-    <span class="image prod">
-      <img src="{{site.baseurl}}{{ page.featured-image }}" alt="">
-    </span> {% endif %} {{ content }} {% include footer.html %}
+    <h1>{{ page.title }}</h1> 
+
+    {% assign totalnumofpics = 0 %}
+    {% for image in site.static_files %}{% if image.path contains page.image-path %}{% assign totalnumofpics = totalnumofpics | plus:1 %}{% endif %}{% endfor %}
+
+     <!-- Slideshow container -->
+    {% assign i = 0 %}
+    <div class="slideshow-container">{% for image in site.static_files %}{% if image.path contains page.image-path %}{% assign i = i | plus:1 %}
+            <div class="mySlides fade">
+              <div class="numbertext">{{ i }} / {{ totalnumofpics }}</div>
+              <img src="{{ site.baseurl }}{{ image.path }}" style="width: 500px;">
+            </div>{% endif %}{% endfor %}
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- The dots/circles -->
+      {% assign i = 0 %}
+      <div style="text-align:center">{% for image in site.static_files %}{% if image.path contains page.image-path %}{% assign i = i | plus:1 %}
+            <span class="dot" onclick="currentSlide({{ i }})"></span>{% endif %}{% endfor %}
+      </div> 
+    </div>
 
 
+    {{ content }} 
+    {% include footer.html %}
+
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/slideshow.js"></script>
 </body>
 
 </html>
