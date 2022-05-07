@@ -9,7 +9,6 @@
 title: Indidé
 email: maria@indide.se
 description: Unika handgjorda smycken
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Logo settings
