@@ -1,9 +1,9 @@
 <section class="tiles">
 
 {% for category in site.categories limit:site.front-page-posts %}
-	<article class="style{{ forloop.index | plus:1 }}">
+	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/pic02.jpg" alt="" />
+			<img src="{{ site.url }}{{ site.baseurl }}/{{ category.tile-image }}" alt="" />
 		</span>
 		<a href="{{ category.url | prepend:site.baseurl | prepend:site.url }}">
 			<h2>{{ category.title }}</h2>
